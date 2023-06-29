@@ -13,7 +13,7 @@ int process(int loc) {
     if (c == '>') p++;
     if (c == '<') p--;
     if (c == '.') std::printf("%c", char(data[p]));
-    if (c == '[') { t = process(t + 1); }
+    if (c == '[') t = process(t + 1);
     if (c == ']' && data[p] != 0) {
       if (data[p] != 0) return process(loc);
       return t;
