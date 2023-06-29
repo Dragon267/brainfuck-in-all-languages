@@ -19,6 +19,7 @@ func processBrainfuck(loc int) int {
 		if c == '>' { p++ }
 		if c == '<' { p-- }
 		if c == '.' { fmt.Print(string(data[p])) }
+    if c == ',' { var ch rune; fmt.Scanf("%c", &ch); data[p] = int(ch); }
 		if c == '[' { t = processBrainfuck(t + 1) }
 		if c == ']' && data[p] != 0 {
 			if data[p] != 0 { return processBrainfuck(loc) }

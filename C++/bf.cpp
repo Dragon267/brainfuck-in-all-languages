@@ -12,6 +12,11 @@ int process(int loc) {
     if (c == '-') data[p]--;
     if (c == '>') p++;
     if (c == '<') p--;
+    if (c == ',') {
+      char cc;
+      std::cin >> cc;
+      data[p] = int(cc);
+    }
     if (c == '.') std::printf("%c", char(data[p]));
     if (c == '[') t = process(t + 1);
     if (c == ']' && data[p] != 0) {

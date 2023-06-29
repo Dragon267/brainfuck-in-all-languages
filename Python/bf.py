@@ -15,11 +15,12 @@ def process(loc):
         if c == '>': p += 1;
         if c == '<': p -= 1;
         if c == '.': print(chr(data[p]), end='')
+        if c == ',': data[p] = ord(input())
         if c == '[': t = process(t + 1)
         if c == ']' and data[p] != 0:
             if data[p] != 0:
-                return process(loc);
-            return t;
+                return process(loc)
+            return t
         t += 1
     return len(s)
 

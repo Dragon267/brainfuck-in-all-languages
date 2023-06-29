@@ -17,6 +17,8 @@ g++ C++/bf.cpp -o C++/bf
 
 ## 🌐 Javascript
 
+Note: No input function (, operation)
+
 ```
 node JavaScript/bf.js main.bf
 ```
@@ -26,6 +28,13 @@ node JavaScript/bf.js main.bf
 ```
 go build -o Go/bf Go/bf.go
 ./Go/bf main.bf
+```
+
+## 🦀 Rust
+
+```
+rustc Rust/bf.rs -o Rust/bf
+./Rust/bf main.bf
 ```
 
 
