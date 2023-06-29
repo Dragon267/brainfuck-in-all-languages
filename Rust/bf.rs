@@ -2,7 +2,7 @@ use std::env;
 use std::fs;
 use std::io;
 
-fn process_brainfuck(data: &mut [u8], p: &mut usize, s: &str, loc: usize) -> usize {
+fn process_brainfuck(data: &mut Vec<i32>, p: &mut usize, s: &str, loc: usize) -> usize {
     let mut t = loc;
     let chars: Vec<char> = s.chars().collect();
     while t < chars.len() {
@@ -11,12 +11,11 @@ fn process_brainfuck(data: &mut [u8], p: &mut usize, s: &str, loc: usize) -> usi
         if c == '-' { data[*p] = data[*p].wrapping_sub(1); }
         if c == '>' { *p += 1; }
         if c == '<' { *p -= 1; }
-        if c == '.' { print!("{}", data[*p] as char); }
+        if c == '.' { print!("{}", data[*p] as u8 as char); }
         if c == ',' {
             let mut input = String::new();
             io::stdin().read_line(&mut input).expect("Failed to read input");
-            let ch = input.chars().next().unwrap();
-            data[*p] = ch as u8;
+            data[*p] = input.chars().next().unwrap() as i32;
         }
         if c == '[' { t = process_brainfuck(data, p, s, t + 1); }
         if c == ']' && data[*p] != 0 {
