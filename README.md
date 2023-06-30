@@ -83,6 +83,10 @@ gcc C/bf.c -o C/bf
 lua Lua/bf.lua main.bf
 ```
 
+## 📊 R 
 
+```
+Rscript R/bf.r main.bf 
+```
 
  
