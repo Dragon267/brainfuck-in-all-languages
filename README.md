@@ -70,6 +70,13 @@ ocamlc Ocaml/bf.ml -o Ocaml/bf
 ./Ocaml/bf main.bf
 ```
 
+## 🔧 C
+
+```
+gcc C/bf.c -o C/bf
+./C/bf main.bf
+```
+
 
 
  
