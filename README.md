@@ -77,6 +77,12 @@ gcc C/bf.c -o C/bf
 ./C/bf main.bf
 ```
 
+## 🎮 Lua
+
+```
+lua Lua/bf.lua main.bf
+```
+
 
 
  
