@@ -89,4 +89,11 @@ lua Lua/bf.lua main.bf
 Rscript R/bf.r main.bf 
 ```
 
+## 🔄 Scala
+
+```
+scalac Scala/bf.scala -d Scala
+scala -classpath Scala Main main.bf
+```
+
  
