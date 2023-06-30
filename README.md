@@ -44,5 +44,11 @@ javac Java/bf.java
 java Java.bf main.bf
 ```
 
+## 🌹 Ruby
+
+```
+ruby Ruby/bf.rb main.bf
+```
+
 
  
