@@ -96,4 +96,10 @@ scalac Scala/bf.scala -d Scala
 scala -classpath Scala Main main.bf
 ```
 
+## 🌸 Kotlin
+
+```
+kotlinc Kotlin/bf.kt -include-runtime -d Kotlin/bf.jar
+java -jar Kotlin/bf.jar main.bf
+```
  
