@@ -50,5 +50,19 @@ java Java.bf main.bf
 ruby Ruby/bf.rb main.bf
 ```
 
+## 🐘 PHP
+
+```
+php PHP/bf.php main.bf
+```
+
+## 💻 C#
+
+```
+mcs C#/bf.cs -o C#/bf
+mono C#/bf main.bf
+```
+
+
 
  
