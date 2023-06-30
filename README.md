@@ -63,6 +63,13 @@ mcs C#/bf.cs -o C#/bf
 mono C#/bf main.bf
 ```
 
+## 🐪 Ocaml
+
+```
+ocamlc Ocaml/bf.ml -o Ocaml/bf
+./Ocaml/bf main.bf
+```
+
 
 
  
