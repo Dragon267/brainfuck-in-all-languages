@@ -37,5 +37,12 @@ rustc Rust/bf.rs -o Rust/bf
 ./Rust/bf main.bf
 ```
 
+## ☕Java
+
+```
+javac Java/bf.java
+java Java.bf main.bf
+```
+
 
  
