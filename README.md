@@ -102,4 +102,10 @@ scala -classpath Scala Main main.bf
 kotlinc Kotlin/bf.kt -include-runtime -d Kotlin/bf.jar
 java -jar Kotlin/bf.jar main.bf
 ```
+
+## 🎯 Julia
+
+```
+julia Julia/bf.jl main.bf
+```
  
