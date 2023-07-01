@@ -108,4 +108,10 @@ java -jar Kotlin/bf.jar main.bf
 ```
 julia Julia/bf.jl main.bf
 ```
+
+## 🐚 Perl
+
+```
+perl Perl/bf.pl main.bf
+```
  
