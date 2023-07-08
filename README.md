@@ -114,4 +114,10 @@ julia Julia/bf.jl main.bf
 ```
 perl Perl/bf.pl main.bf
 ```
+
+## 🎯 Dart
+
+```
+dart Dart/bf.dart main.bf
+```
  
