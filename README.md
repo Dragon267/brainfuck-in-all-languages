@@ -120,4 +120,11 @@ perl Perl/bf.pl main.bf
 ```
 dart Dart/bf.dart main.bf
 ```
+
+## 🌐 TypeScript
+
+```
+tsc TypeScript/bf.ts 
+node TypeScript/bf.js main.bf
+```
  
