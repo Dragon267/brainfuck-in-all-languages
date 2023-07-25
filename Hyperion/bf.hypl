@@ -16,19 +16,13 @@ def process(loc) {
     if (c == ".") { print string:chr(data[p]) |; }
     if (c == ",") { data[p] = string:ord(console:get_line()); }
     if (c == "[") { t = process(t + 1); }
-    if (c == "]" and data[p] != 0) {
-      if (data[p] != 0) {
-        return process(loc);
-      }
-      return t;
-    }
+    if (c == "]" and data[p] != 0) { return process(loc); }
     inc t;
   }
   return string:len(s);
 }
 
-let data = [];
-for (let i = 0; i < 30000; inc i) { list:push_back(data, 0); }
+let data = list:init(30000, 0);
 
 let p = 0;
 
