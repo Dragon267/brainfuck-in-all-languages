@@ -1,0 +1,40 @@
+import std sys;
+import std os;
+import std file_io;
+import std list;
+import std string;
+import std console;
+
+def process(loc) {
+  let t = loc;
+  while (t < string:len(s)) {
+    let c = string:get(s, t);
+    if (c == "+") { data[p] = data[p] + 1; }
+    if (c == "-") { data[p] = data[p] - 1; }
+    if (c == ">") { inc p; }
+    if (c == "<") { decr p; }
+    if (c == ".") { print string:chr(data[p]) |; }
+    if (c == ",") { data[p] = string:ord(console:get_line()); }
+    if (c == "[") { t = process(t + 1); }
+    if (c == "]" and data[p] != 0) {
+      if (data[p] != 0) {
+        return process(loc);
+      }
+      return t;
+    }
+    inc t;
+  }
+  return string:len(s);
+}
+
+let data = [];
+for (let i = 0; i < 30000; inc i) { list:push_back(data, 0); }
+
+let p = 0;
+
+let s = file_io:read(
+  os:getcwd() + "/" + sys:get_argv()[2]
+);
+
+process(0);
+

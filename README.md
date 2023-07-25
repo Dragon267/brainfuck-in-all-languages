@@ -127,4 +127,12 @@ dart Dart/bf.dart main.bf
 tsc TypeScript/bf.ts 
 node TypeScript/bf.js main.bf
 ```
+
+## 🌓 Hyperion
+
+You can download Hyperion here: https://github.com/MrMineev/Hyperion
+
+```
+hypl Hyperion/bf.hypl main.bf
+```
  
